@@ -1,0 +1,166 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center
+}
+
+
+h1 {
+    font-family: 'Caramel', cursive;
+    font-weight: 100;
+    font-size: 120pt;
+    margin: 0;
+    color: #898f8d;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 24pt;
+    letter-spacing: 10px;
+    margin-top: 0;
+    color: #898f8d;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20pt;
+    color: #898f8d;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16pt;
+    margin: 5;
+
+}
+
+.background {
+    width: 100%;
+}
+
+.gray {
+    background-color: #898f8d;
+}
+
+.cream {
+    background-color: #f4dbbc;
+}
+
+.frontpage-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start-image {
+    height: 70vh;
+    margin-bottom: 0;
+}
+
+.title-container {
+    height: 30vh;
+    margin-bottom: 0;
+
+}
+
+.about-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.intro-statement {
+    display: block;
+    margin: 3vw;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+
+.smallpic {
+    border-radius: 10px;
+    width: 27vw;
+}
+
+.endpic {
+    border-radius: 10px;
+    align-self: center;
+    width: 30vw;
+}
+
+.bye {
+    color: #f4dbbc;
+}
+
+.button {
+    text-align: center;
+    color: #f4dbbc;
+    font-weight: 500;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+@media (max-width: 480px)  {
+
+    .frontpage-container {
+        height: 60vh;
+    }
+    .start-image {
+        height: 60vh;
+    }
+
+    .title-container {
+        height: 30vh;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+
+    .smallpic {
+        width: 74vw;
+    }
+
+    .about-container {
+        padding: 10vw;
+    }
+
+    .endpic {
+        width: 74vw;
+    }
+    .contacts {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+
+    .endpic {
+        width: 360px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .smallpic {
+        width: 37vw;
+    }
+}
